@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://siqxf1x4n4vf"
+path="res://.godot/imported/background_music.wav-030091f0692d8433c8b254fb66b20afd.sample"
+
+[deps]
+
+source_file="res://Addons/Tiny Swords/Audio/background_music.wav"
+dest_files=["res://.godot/imported/background_music.wav-030091f0692d8433c8b254fb66b20afd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

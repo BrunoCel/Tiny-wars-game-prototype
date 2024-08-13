@@ -1,0 +1,133 @@
+[gd_scene load_steps=8 format=3 uid="uid://du3f3lou38h5l"]
+
+[ext_resource type="Texture2D" uid="uid://bx1xa65vtyixf" path="res://Addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="1_sbsmk"]
+[ext_resource type="Script" path="res://Scripts/game_ui.gd" id="1_xukbt"]
+[ext_resource type="Texture2D" uid="uid://bqgxs4h7tu1tc" path="res://Addons/Tiny Swords/Resources/Resources/M_Idle_(NoShadow).png" id="3_k2cjf"]
+[ext_resource type="Texture2D" uid="uid://camstj1rb3wih" path="res://Addons/Tiny Swords/Resources/Resources/G_Idle.png" id="4_tuhw7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5wyuq"]
+texture = ExtResource("1_sbsmk")
+texture_margin_left = 37.6003
+texture_margin_top = 32.0
+texture_margin_right = 38.4769
+texture_margin_bottom = 48.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(32, 48, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mukp"]
+atlas = ExtResource("3_k2cjf")
+region = Rect2(40, 48, 56, 56)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_06at8"]
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_xukbt")
+
+[node name="Panel2" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -141.0
+offset_bottom = 88.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5wyuq")
+
+[node name="Meatlabel" type="Label" parent="Panel2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 9.5
+offset_top = -31.0
+offset_right = 42.5
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "10
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel2"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -8.0
+offset_right = 80.0
+offset_bottom = 57.0
+texture = SubResource("AtlasTexture_8mukp")
+
+[node name="Panel4" type="Panel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -290.0
+offset_right = -149.0
+offset_bottom = 88.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5wyuq")
+
+[node name="GoldLabel" type="Label" parent="Panel4"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 9.5
+offset_top = -31.0
+offset_right = 42.5
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "10
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel4"]
+material = SubResource("CanvasItemMaterial_06at8")
+layout_mode = 0
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 81.0
+offset_bottom = 49.0
+texture = ExtResource("4_tuhw7")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="Panel3" type="Panel" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_right = 122.0
+offset_bottom = 104.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5wyuq")
+
+[node name="TimerLabel" type="Label" parent="Panel3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -36.0
+offset_right = 51.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8:50
+"
+horizontal_alignment = 1
+vertical_alignment = 1

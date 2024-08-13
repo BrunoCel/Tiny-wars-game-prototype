@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://8sn3m647w0ek"
+path="res://.godot/imported/coin_sound.wav-e8a02fd4092e410ad05fab510fff6666.sample"
+
+[deps]
+
+source_file="res://Addons/Tiny Swords/Audio/coin_sound.wav"
+dest_files=["res://.godot/imported/coin_sound.wav-e8a02fd4092e410ad05fab510fff6666.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
